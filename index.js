@@ -24,7 +24,25 @@ console.log(new_data);
 
 
 
+// Shunday function tuzing, u 1ta parametr ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini return qilsin.
 
+// Masalan: getDigits("ag1aw5g6") return qilsin 3
+
+function getDigits (str) { 
+    let arr= str.split ("");
+    let quantity =0;
+    arr.forEach (letter => {
+        if (!isNaN(letter)) {
+            quantity +=1;
+        } 
+        
+    });
+    return quantity;
+
+ }
+
+
+ console.log(getDigits("ag1aw5g6"));
 
 
 
