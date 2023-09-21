@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": { 
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "train": "node taskc.js",
+    "dev":  "node homework2.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/dragonmm98/mit1/issues"
   },
-  "homepage": "https://github.com/dragonmm98/mit1#readme"
+  "homepage": "https://github.com/dragonmm98/mit1#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^8.0.0",
+    "moment": "^2.29.4",
+    "uuid": "^9.0.1",
+    "validator": "^13.11.0"
+  }
 }
