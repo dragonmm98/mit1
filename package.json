@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "train": "node taskc.js",
-    "dev":  "node homework2.js"
+    "train": "nodemon train.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,10 @@
   "homepage": "https://github.com/dragonmm98/mit1#readme",
   "dependencies": {
     "chalk": "^4.1.2",
+    "express": "^4.18.2",
     "inquirer": "^8.0.0",
     "moment": "^2.29.4",
+    "nodemon": "^3.0.1",
     "uuid": "^9.0.1",
     "validator": "^13.11.0"
   }
