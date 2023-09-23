@@ -1,5 +1,6 @@
 // Express  framework
 const express = require ("express");
+const res = require ("express/lib/response");
 const app = express ();
 const http = require("http");
 
@@ -16,16 +17,18 @@ app.set ("view engine","ejs");
 
 // Ruterlar uchun ---Routng codes
 
-app.get ("/", function(req,res){
-    res.end (`<h1 style= color:red;> Hello MIT5</h1>`);
+app.post("/create-item", (req,res)=>{
+    console.log (req.body);
+    res.json({test: "sucess"});
 })
-app.get ("/gift", function(req,res){
-    res.end (`<h1 style = color:blue;background-color:red;font-size:100px;>You are inside of gift section</h1>`)
-})
+
+app.get ("/", function (req,res){
+    res.render("harid");
+});
 
 const server = http.createServer(app);
 
 let PORT = 3000;
 server.listen (PORT,function(){
     console.log (`The server is running successfully on port ${PORT}`);
-})
+});
