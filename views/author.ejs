@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="/main.css"/>
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="frame">
+        <div class="main_frame">
+            <div class="left_frame">
+                <div class="left_1">
+                    <div class="left_1_1">
+                        <img 
+                        src="images/portfolio.png" 
+                        width="156px" 
+                        height="142px" 
+                        alt="">
+                    </div>
+                    <div class="left_1_2"><%= user.name %></div>
+                    <div class="left_1_3"><%= user.profession %></div>
+                    <div class="left-icons">
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/facebook.svg" class="icon-1" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/instagram.svg" class="icon-1" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/linkedin.svg" class="icon-1" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/twitter.svg" class="icon-1" alt="">
+                            </div>
+                        </a>
+                        <a class="link_href" href="">
+                            <div class="icon">
+                                <img src="icon/dribbble.svg" class="icon-1" alt="">
+                            </div>
+                            </a>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_2">
+                    <div class="age">
+                        <p class="age_1">Age</p>
+                        <div class="24y"><%=user.age  %></div>
+                    </div>
+                    <div class="residence">
+                        <p class="residence_1">Residence:</p>
+                        <div class="24y"><%=user.residence %></div>
+                    </div>
+                    <div class="freelance">
+                        <p class="residence_1">Freelance:</p>
+                        <div class="24y">Available</div>
+                    </div>
+                    <div class="address">
+                        <p class="adress_1">Address:</p>
+                        <div class="24y"><%=user.adress %></div>
+                    </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_3">
+                    <p class="skills">Languages</p>
+                <div class="uzbek">
+                    <div class="til_uz"><%= user.languages[0]  %></div>
+                    <p>100%</p>
+                </div>
+                <div class="line_uz"></div>
+                <div class="english">
+                    <div class="til_uz"><%= user.languages[2]  %></div>
+                    <p>80%</p>
+                </div>
+                <div class="line_eng"></div>
+                <div class="korean">
+                    <div class="til_uz"><%= user.languages[1]  %></div>
+                    <p>60%</p>
+                    
+                </div>
+                <div class="line_kor"></div>
+
+
+                </div>
+                <div class="marginer"></div>
+                <div class="left_4">
+                    <p class="skills">Skills</p>
+                    <div class="html">
+                        <div class="html_1"><%= user.skills[0]  %></div>
+                        <p>100%</p>
+                    </div>
+                    <div class="line_html"></div>
+                    <div class="html">
+                        <div class="css_1"><%= user.skills[1]  %></div>
+                        <p>80%</p>
+                    </div>
+                    <div class="line_css"></div>
+                    <div class="html">
+                        <div class="js_1"><%= user.skills[2]  %></div>
+                        <p>60%</p>
+                        
+                    </div>
+                    <div class="line_js"></div>
+                
+                    <div class="html">
+                        <div class="nodejs_1"><%= user.skills[3]  %></div>
+                        <p>60%</p>
+                        
+                    </div>
+                    <div class="line_nodejs"></div>
+    
+
+                </div>
+                <div class="marginer"></div>
+                <div class="left_5">
+                    
+                </div>
+                <div class="marginer"></div>
+                
+
+            </div>
+            <div class="mid_frame"></div>
+            <div class="right_frame"></div>
+        </div>
+    </div>
+  </body>
+</html>
