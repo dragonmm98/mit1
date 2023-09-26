@@ -41,7 +41,7 @@ flex-direction: column;
 position: relative;
 width: 108px;
 height: 1315px;
-background-color:blue;
+background-color: white;
 display: flex;
 align-items: center;
 flex-direction: column;
@@ -508,33 +508,225 @@ gap:5px
 .mid_2 .mid_2_1 {
 width: 310px;
 height: 225px;
-background-color: #2B2B2B;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 5px;
+background-color: white;
 
+
+}
+.main_text{
+    color: var(--Black, #2B2B2B);
+
+/* H4 - 18px */
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 123.6%; /* 22.248px */
+text-transform: capitalize;
+}
+.main_text1{
+    color: var(--Paragraph-Font, #767676);
+text-align: center;
+font-kerning: none;
+font-feature-settings: 'calt' off;
+
+/* Paragraph Progress - 15 */
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 160% */
+text-transform: capitalize;
 }
 .mid_2 .mid_2_2 {
  width: 310px;
 height: 225px;
-background-color: #2B2B2B;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 5px;
+background-color: white;
     
 }
 .mid_2 .mid_2_3 {
 width: 310px;
 height: 225px;
-background-color: #2B2B2B;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 5px;
+background-color: white;
     
 }
 .mid_2 .mid_2_4 {
 width: 310px;
 height: 225px;
-background-color: #2B2B2B;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 5px;
+background-color: white;
 }
 .mid_2 .mid_2_5 {
 width: 310px;
 height: 225px;
-background-color: #2B2B2B;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 5px;
+background-color: white;
 }
 .mid_2 .mid_2_6 {
  width: 310px;
 height: 225px;
-background-color: #2B2B2B;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 5px;
+background-color: white;
+}
+.mid_2_6 .order {
+    width: 86px;
+height: 20px;
+flex-shrink: 0;
+}
+.order .ordernow {
+    color: var(--Yellow, #FFB400);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+background-color:white;
+border: none;
+}
+
+/* ---// right frame  css codes */
+
+
+.right_frame .right_frame1 {
+width: 30px;
+height: 30px;
+flex-shrink: 0;
+margin-top: 60px;
+}
+.right_frame .right_frame2{
+ width: 65px;
+height: 593px;
+flex-shrink: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 40px;
+}
+.right_frame .right_icons1 {
+    width: 65px;
+height: 33px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+top: 130px;
+position: absolute;
+
+}
+
+.home {
+color:white;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+position:absolute;
+
+}
+
+
+.right_frame .right_icons2 {
+width: 40px;
+height: 40px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.right_icons2 .home {
+    width: 18px;
+height: 18px;
+flex-shrink: 0;
+position: absolute;
+}
+.eclipse {
+width: 40px;
+height: 40px;
+flex-shrink: 0;
+background-color: #FFB400;
+border-radius: 50%;
+border-color: #2B2B2B;
+}
+
+.right_frame .right_icons3 {
+width: 40px;
+height: 40px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.eclipse1{
+    width: 40px;
+    height: 40px;
+    background-color: #C8C8C8;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+.index1 {
+    width: 16.5px;
+    height: 18px;
+    flex-shrink: 0;
+    position: absolute;
+}
+.right_icons4{
+    width: 40px;
+height: 40px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.right_icons5 {
+    width: 40px;
+height: 40px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.right_icons6{
+    width: 40px;
+height: 40px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.right_icons7{
+    width: 40px;
+height: 40px;
+flex-shrink: 0;
+display: flex;
+align-items: center;
+justify-content: center;
 }
