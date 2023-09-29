@@ -1,78 +1,144 @@
-// Node Js event loop va callback function
-console.log('Jack Ma suggestions');
-const list = [
-  "be good student",  //0-20 
-  "follow right person", //20-30,
-  "work on yourself",  //30-40,
-  "do things, you are good at", //40-50,
-  "invest young generation",  //50-60,
-  "rest easy ", //S60
-];
-
-function suggestion (a,callback) {
-  if (typeof a !=='number') callback ("insert numb", null);
-  else if (a<=20) callback (null,list[0]);
-  else if (a>20 && a<=30) callback (null,list[1]);
-  else if (a>30 && a<=40) callback (null,list[2]);
-  else if (a>40 && a<=50) callback (null,list[3]);
-  else if (a>50 && a<=60) callback (null,list[4]);
-  else {
-       setTimeout(function(){
-      callback(null,list[5]);
-    },5000);
-  }
-
-}
-console.log('passed here 1')
-suggestion (45,(err,data) =>{
-  if (err) console.log ('ERROR:', err);
-  console.log ('answer:',data);
-})
-console.log('passed here 2')
+// E task
 
 
-
-
-
-// Async
-
-
-async function maslahat(a) {
-  if (typeof a !== "number") throw new Error ("insert number");
-  else if (a <=20 ) return list[0];
-  else if (a >20 && a<=30) return list [1];
-  else if (a >30 && a<=40) return list [2];
-  else if (a >40 && a<=50) return list [3];
-  else if (a >50 && a<=60) return list [4];
-  else {
-    return new Promise((resolve,reject) => {
-      setTimeout(() => {
-        resolve(list[5]);
-      },5000);
-    });
-  }
+function reverseString(inputString) {
+  
+  const reversedString = inputString.split('').reverse().join('');
+  
+  console.log(reversedString);
 }
 
 
-console.log('passed here async1')
-maslahat(61).then((data) =>{console.log('javob:', data)}).catch ((err) => {
-  console.log('error:',err)
-});
-
-console.log('passed here async1')
+reverseString('Hello');
 
 
-console.log('asyn and await------------------------')
 
-async function run () {
-  let javob = await maslahat(20);
-  console.log (javob);
-  javob = await maslahat(31);
-  console.log(javob)
-  javob = await maslahat(41);
-  console.log(javob);
-}
-run();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Node Js event loop va callback function
+// console.log('Jack Ma suggestions');
+// const list = [
+//   "be good student",  //0-20 
+//   "follow right person", //20-30,
+//   "work on yourself",  //30-40,
+//   "do things, you are good at", //40-50,
+//   "invest young generation",  //50-60,
+//   "rest easy ", //S60
+// ];
+
+// function suggestion (a,callback) {
+//   if (typeof a !=='number') callback ("insert numb", null);
+//   else if (a<=20) callback (null,list[0]);
+//   else if (a>20 && a<=30) callback (null,list[1]);
+//   else if (a>30 && a<=40) callback (null,list[2]);
+//   else if (a>40 && a<=50) callback (null,list[3]);
+//   else if (a>50 && a<=60) callback (null,list[4]);
+//   else {
+//        setTimeout(function(){
+//       callback(null,list[5]);
+//     },5000);
+//   }
+
+// }
+// console.log('passed here 1')
+// suggestion (45,(err,data) =>{
+//   if (err) console.log ('ERROR:', err);
+//   console.log ('answer:',data);
+// })
+// console.log('passed here 2')
+
+
+
+
+
+// // Async
+
+
+// async function maslahat(a) {
+//   if (typeof a !== "number") throw new Error ("insert number");
+//   else if (a <=20 ) return list[0];
+//   else if (a >20 && a<=30) return list [1];
+//   else if (a >30 && a<=40) return list [2];
+//   else if (a >40 && a<=50) return list [3];
+//   else if (a >50 && a<=60) return list [4];
+//   else {
+//     return new Promise((resolve,reject) => {
+//       setTimeout(() => {
+//         resolve(list[5]);
+//       },5000);
+//     });
+//   }
+// }
+
+
+// console.log('passed here async1')
+// maslahat(61).then((data) =>{console.log('javob:', data)}).catch ((err) => {
+//   console.log('error:',err)
+// });
+
+// console.log('passed here async1')
+
+
+// console.log('asyn and await------------------------')
+
+// async function run () {
+//   let javob = await maslahat(20);
+//   console.log (javob);
+//   javob = await maslahat(31);
+//   console.log(javob)
+//   javob = await maslahat(41);
+//   console.log(javob);
+// }
+// run();
 
 
 
