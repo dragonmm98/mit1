@@ -17,9 +17,8 @@ app.set ("view engine","ejs");
 
 // Ruterlar uchun ---Routng codes
 
-app.post("/create-item", (req,res)=>{
-    console.log (req.body);
-    res.json({test: "sucess"});
+app.get ("/author", (req,res)=>{
+    res.render("author", {user:user});
 })
 
 app.get ("/", function (req,res){

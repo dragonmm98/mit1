@@ -1,5 +1,4 @@
 const http = require("http");
-const app = require("./app");
 const mongodb = require ("mongodb");
 
 let db;
@@ -17,7 +16,8 @@ mongodb.connect (
 else {
 console.log ('COnnected SUccesfully');
 module.exports = client;
-    const app =require ("./app");
+    
+const app =require ("./app");
 const server = http.createServer(app);
 let port= 3000;
 server.listen(port,function (){
