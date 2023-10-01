@@ -1,15 +1,68 @@
-// E task
+// F-Task: 
 
+// findDoublers function tuzing, unga faqat bitta string argument pass bolib, 
+//agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
 
-function reverseString(inputString) {
+// masalan: getReverse("hello") return true return qiladi
+
+function findDoublers(stringA) {
   
-  const reversedString = inputString.split('').reverse().join('');
+  stringA = stringA.toLowerCase();
+
+  for (let i = 0; i < stringA.length; i++) {
+    const char = stringA[i];
+    if (stringA.indexOf(char, i + 1) !== -1) {
+      return true; 
+    }
+  }
   
-  console.log(reversedString);
+  return false;
 }
 
+console.log(findDoublers('hello'));
 
-reverseString('Hello');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // E task
+
+
+// function reverseString(inputString) {
+  
+//   const reversedString = inputString.split('').reverse().join('');
+  
+//   console.log(reversedString);
+// }
+
+
+// reverseString('Hello');
 
 
 
