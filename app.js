@@ -5,6 +5,7 @@ const app = express ();
 
 // Mongo DB connect 
  const db = require("./server").db();
+ const mongodb= require("mongodb");
 
 // Kirish kodlari 
 app.use(express.static("public"));
@@ -24,7 +25,14 @@ app.post ("/create-item",(req,res)=>{
       res.json(data.ops[0]);
 
     });
-})
+});
+app.post ("/delete-item", (req,res) =>{
+     const id =req.body.id;
+     db.collection("plans").deleteOne({_id: new mongodb.ObjectId (id)}, function(err,data){
+        res.json({state:"success"});
+     });
+     
+});
 
 
 app.get ("/", function (req,res){
