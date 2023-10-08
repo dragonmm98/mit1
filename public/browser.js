@@ -81,8 +81,30 @@ document.addEventListener ("click", function (e) {
 
 document.getElementById("clean-all").addEventListener("click", function(){
     axios
-    .post ("/delete-all", {delete_all: true})
-    .then (response => {alert (response.data.state);
-    document.location.reload();
-})
-})
+    .post("/delete-all",{delete_all: true})
+    .then((response)=>{
+        alert (response.data.state);
+        // document.location.reload();
+        document.querySelector("#item-list").innerHTML= "";
+              
+        
+    } )
+    .catch((err)=>{
+        console.log ("Try again")
+    });    
+        // e.target.parentElemen.removeAll();
+    })
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    // .post ("/delete-all", {delete_all: true})
+    // .then (response => {alert (response.data.state);
+    // document.location.reload();
+// })
+// })
